@@ -3,6 +3,7 @@ Symulator Biznesu Zadanie 2
 
 pip install psycopg2 żeby móc się łączyć z bazą postgresql
 
+#Funkcje
 Funkcja UserInterface() jest startem gdzie wprowadzamy wartości dowolne w odpowiednie kategorie bo nie mam symulacji.
 
 Funkcja generateUserID losuje numer id w zakresie 1000-9999 dla identyfikatora użytkownika.
@@ -12,7 +13,7 @@ Funkcja insert_data() zapisuje dane w bazie danych w 3 tabelach (user_data, ques
 Miałem pierwotnie taki plan żeby zrobić trigger, który by z tabeli user_data zapisywał po insert/update wartości do questions i answers ale
 ostatecznie mi się nie udało i za późno się za to zabrałem.
 
-Struktura sql tabel i type enum:
+#Struktura sql tabel i type enum:
 
 create type types as enum ('1_correct', '2_correct', '3_correct', 'order');
 
