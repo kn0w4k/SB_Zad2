@@ -6,8 +6,8 @@ import psycopg2
 
 connection = psycopg2.connect(
     database='Symulator_Biznesu',
-    user='postgres',
-    password='super',
+    user='username',
+    password='password',
     host='localhost',
     port='5432'
 )
