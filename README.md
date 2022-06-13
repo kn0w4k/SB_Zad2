@@ -1,13 +1,11 @@
 # SB_Zad2
 Symulator Biznesu Zadanie 2
 
-Na ostatnia chwilę się zabrałem za to zadanie.
+pip install psycopg2 żeby móc się łączyć z bazą postgresql
 
-pip install psycopg2 żeby móc łączyć z postgresql bazą danych gdzie jest zapisywane dane wprowadzone jak i pytania i odpowiedź.
-
-funkcja UserInterface() jest startem gdzie wprowadzamy wartości dowolne w odpowiednie kategorie bo nie mam symulacji.
-funkcja generateUserID losuje numer id w zakresie 1000-9999 dla identyfikatora użytkownika.
-funkcja insert_data() zapisuje dane w bazie danych w 3 tabelach (user_data, questions i answers) postgresql.
+Funkcja UserInterface() jest startem gdzie wprowadzamy wartości dowolne w odpowiednie kategorie bo nie mam symulacji.
+Funkcja generateUserID losuje numer id w zakresie 1000-9999 dla identyfikatora użytkownika.
+Funkcja insert_data() zapisuje dane w bazie danych w 3 tabelach (user_data, questions i answers) postgresql.
 
 Miałem pierwotnie taki plan żeby zrobić trigger, który by z tabeli user_data zapisywał po insert/update wartości do questions i answers ale
 ostatecznie mi się nie udało.
